@@ -141,11 +141,16 @@ const styles = `
     // max-width: 800px;
     margin: 20px auto;
     font-family: 'Segoe UI', sans-serif;
+    justify-content: center;
+    display: flex
+    /* padding: 0px 100px; */
+    align-items: center;
   }
 
   .search-bar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: white;
     border-radius: 30px;
     padding: 5px 5px 5px 15px;
@@ -257,14 +262,14 @@ const styles = `
 
   .selector-icon {
     margin-right: 8px;
-    color: #888;
+    color: black;
     font-size: 14px;
   }
 
   .search-button {
     display: flex;
     align-items: center;
-    background: #ff5a5f;
+    background: var(--logo-color);
     color: white;
     border: none;
     border-radius: 25px;
@@ -277,7 +282,7 @@ const styles = `
   }
 
   .search-button:hover {
-    background: #e04a50;
+    background: var(--logo-color-hover);
   }
 
   .search-button-icon {
@@ -288,7 +293,8 @@ const styles = `
   .room-guest-popup {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: 15%;
+    // right: 0;
     background: white;
     border-radius: 8px;
     padding: 15px;
@@ -320,7 +326,7 @@ const styles = `
   }
 
   .counter-controls button {
-    background: #f5f5f5;
+    // background: #f5f5f5;
     border: none;
     border-radius: 50%;
     width: 25px;
@@ -351,8 +357,8 @@ const styles = `
     }
 
     .room-guest-popup {
-      left: 0;
-      right: auto;
+      // left: 0;
+      // right: auto;
     }
   }
 `;

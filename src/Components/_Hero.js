@@ -1,7 +1,7 @@
 import { useStore } from "../Context/AppContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
-// import SearchBar from "./_SearchBar";
+import SearchBar from "./_SearchBar";
 // import { setUrlParam } from "../Tools/helper";
 
 import hero1Jpg from "../Assets/images/hero11.jpg";
@@ -48,14 +48,11 @@ const Hero = ({ data = defaultPropData }) => {
         </Swiper>
       </div>
 
-      <div
-        className="container"
-        style={{ marginBottom: "0rem", padding: "5rem" }}
-      >
+      <div className="container" style={{ marginBottom: "0rem" }}>
         <div className="row">
           <div className="col-lg">
             <h2>India's no one premium value hotels</h2>
-            {/* <SearchBar /> */}
+            <SearchBar />
             {/* <h2>Millions found their perfect match at {data?.name} !</h2> */}
           </div>
         </div>
