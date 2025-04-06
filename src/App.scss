@@ -15,9 +15,10 @@
   --light-primary: #000000;
   --light-secondary: #777777;
   // --light-accent: #75005c;
-  --light-accent: #582c4f;
+  --light-accent: #de3330;
   // --light-accent: #582c4f;
   // --light-accent: #7c045c;
+  // --light-accent-secondary: #f84b1b5d;
   --light-accent-secondary: #e5cdde;
   --light-accent-2: #a499c9;
   --light-background: #ffffff;
@@ -27,6 +28,36 @@
   --logo-color: #EF2E32;
   --logo-color-hover: #c50307;
 }
+
+/* styles.css */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.light {
+  --light-accent: #C91429;
+  // --light-accent: #de3330;
+  // --light-background: #f0c27c;
+  // --light-background-100: #f0c27c;
+  background: #FFF2D4 !important;
+}
+
+.dark {
+  --light-accent: #f0c27c;
+  background: #fb384f6f !important;
+  // --light-background-100: #C91429;
+  // --light-background: #C91429;
+  // --light-background: #de3330;
+}
+
+.app {
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
 
 * {
   margin: 0;
@@ -3480,7 +3511,8 @@ body {
 
   .col-lg {
     padding: 0;
-    text-align: center;
+    text-align: left;
+    // text-align: center;
     // &:nth-child(n + 3) {
     //   text-align: end;
     // }

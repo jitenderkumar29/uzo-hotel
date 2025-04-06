@@ -8,86 +8,87 @@ const Footer = () => {
     <footer className="Footer">
       <div className="container">
         <div className="quicklinks row">
+          <h4>Discover your premium luxury hotel in 20+ country</h4>
           <section className="col-lg">
-            <div className="mb-3 pb-3 pe-3 border-bottom">
+            {/* <div className="mb-3 pb-3 pe-3 border-bottom">
               <h4>Help & Support</h4>
-            </div>
+            </div> */}
             <ul>
               <li>
-                <Link to="/contact-us">Contact us</Link>
+                <Link to="/">Hotels in Agra</Link>
               </li>
               {/* <li>
                 <Link to="#">Feedback</Link>
               </li> */}
               <li>
-                <Link to="/faq">Faq</Link>
+                <Link to="/">Hotels in Bareilly</Link>
               </li>
               <li>
-                <Link to="/csr-responsibilities">CSR & Responsibility</Link>
+                <Link to="/">Hotels in Chennai</Link>
               </li>
               <li>
-                <Link to="/photo-gallery">Photo Gallery</Link>
+                <Link to="/">Hotels in Bareilly</Link>
               </li>
               <li>
-                <Link to="/">Site Map</Link>
+                <Link to="/">Hotels in Mumbai</Link>
               </li>
               <li>
-                <Link to="/career">career</Link>
+                <Link to="/">Hotels in Bangalore</Link>
               </li>
             </ul>
           </section>
 
           <section className="col-lg">
-            <div className="mb-3 pb-3 pe-3 border-bottom">
+            {/* <div className="mb-3 pb-3 pe-3 border-bottom">
               <h4>Information</h4>
-            </div>
+            </div> */}
             <ul>
               <li>
-                <Link to="/about">About Us</Link>
+                <Link to="/">Hotels in Delhi</Link>
               </li>
               <li>
-                <Link to="#">Awards & Accolades</Link>
+                <Link to="/">Hotels in Gurgaon</Link>
               </li>
               <li>
-                <Link to="#">E Brochure</Link>
+                <Link to="/">Hotels in Goa</Link>
               </li>
               {/* <li>
                 <Link to="#">Testimonials</Link>
               </li> */}
               <li>
-                <Link to="/blogs">Shadi Blogs</Link>
+                <Link to="/">Hotels in Kolkata</Link>
               </li>
               <li>
-                <Link to="/sweet-stories">Sweet Stories</Link>
+                <Link to="/">Hotels in Noida</Link>
               </li>
               <li>
-                <Link to="/ns-center">NobleShaadi Centers</Link>
+                <Link to="/">Hotels in Pune</Link>
               </li>
             </ul>
           </section>
 
           <section className="col-lg">
-            <div className="mb-3 pb-3 pe-3 border-bottom">
+            {/* <div className="mb-3 pb-3 pe-3 border-bottom">
               <h4>Services</h4>
-            </div>
+            </div> */}
             <ul>
               <li>
-                <Link to="/membership-plans">Membership Plans</Link>
+                <Link to="/">Hotels in Ghaziabad</Link>
               </li>
               <li>
-                <Link to="#">Digital Magazine</Link>
+                <Link to="/">Hotels in Haridwar</Link>
               </li>
               <li>
-                <Link to="/sapphire-premier">Saphire Premier</Link>
+                <Link to="/">Hotels in Shirdi</Link>
               </li>
               <li>
-                <Link to="/ns-privilege">NS Privilege</Link>
+                <Link to="/">Hotels in Varansi</Link>
               </li>
               <li>
-                <Link to="#">Horoscope Match</Link>
+                <Link to="/">Hotels in Jaipur</Link>
               </li>
               <li>
-                <Link to="#">Android / IOS App </Link>
+                <Link to="/">Hotels in Sikandrabad</Link>
               </li>
               {/* <li>
                 <Link to="#">IOS App</Link>
@@ -96,44 +97,71 @@ const Footer = () => {
           </section>
 
           <section className="col-lg">
-            <div className="mb-3 pb-3 pe-3 border-bottom">
+            {/* <div className="mb-3 pb-3 pe-3 border-bottom">
               <h4>Legal & You</h4>
-            </div>
+            </div> */}
             <ul>
               <li>
-                <Link to="/fraud-reporting">Fraud Reporting</Link>
+                <Link to="/">Hotels in Gaya</Link>
               </li>
               <li>
-                <Link to="/terms-of-use">Terms of Use</Link>
+                <Link to="/">Hotels in Raipur</Link>
               </li>
               <li>
-                <Link to="/third-party-terms-of-use">
-                  3rd Party Terms Of Use
-                </Link>
+                <Link to="/">Hotels in Dwarka</Link>
               </li>
               <li>
-                <Link to="/privacy-policies">Privacy Policy</Link>
+                <Link to="/">Hotels in Junagadh</Link>
               </li>
               <li>
-                <Link to="/privacy-features">Privacy Feature</Link>
+                <Link to="/">Hotels in Surat</Link>
               </li>
               {/* <li>
                 <Link to="/grievance">Grievance</Link>
               </li> */}
               <li>
-                <Link to="/write-to-us">Report Misuse</Link>
+                <Link to="/">Hotels in Ambala</Link>
+              </li>
+            </ul>
+          </section>
+
+          <section className="col-lg">
+            {/* <div className="mb-3 pb-3 pe-3 border-bottom">
+              <h4>Legal & You</h4>
+            </div> */}
+            <ul>
+              <li>
+                <Link to="/">Hotels in Hisar</Link>
+              </li>
+              <li>
+                <Link to="/">Hotels in Rewari</Link>
+              </li>
+              <li>
+                <Link to="/">Hotels in Sonipat</Link>
+              </li>
+              <li>
+                <Link to="/">Hotels in Mandi</Link>
+              </li>
+              <li>
+                <Link to="/">Hotels in Jammu</Link>
+              </li>
+              {/* <li>
+                <Link to="/grievance">Grievance</Link>
+              </li> */}
+              <li>
+                <Link to="/">Hotels in Amritsar</Link>
               </li>
             </ul>
           </section>
         </div>
 
-        <div className="socials row">
-          <section className="col-lg text-start d-flex align-items-center">
-            {/* <img src={logoPng} alt="" /> */}
-            NobleShaadi @ 2022 All Copyright Reserved
-          </section>
+        {/* <div className="socials row">
+          <section className="col-lg text-start d-flex align-items-center"> */}
+        {/* <img src={logoPng} alt="" /> */}
+        {/* Uzo @ 2025 All Copyright Reserved */}
+        {/* </section> */}
 
-          <section className="col-lg">
+        {/* <section className="col-lg">
             <ul>
               <li className="facebook">
                 <i className="fab fa-facebook-f"></i>
@@ -151,8 +179,8 @@ const Footer = () => {
                 <i className="fab fa-linkedin-in"></i>
               </li>
             </ul>
-          </section>
-        </div>
+          </section> */}
+        {/* </div> */}
       </div>
     </footer>
   );

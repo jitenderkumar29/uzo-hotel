@@ -5,18 +5,23 @@ import { StateStore } from "./Context/AppContext";
 
 import App from "./App";
 import ScrollToTop from "./Components/_ScrollToTop";
+import { ThemeProvider } from "./Context/ThemeContext";
 // import { ChakraProvider } from "@chakra-ui/react";
 
 ReactDOM.render(
-  <StrictMode>
-    <BrowserRouter>
-      <StateStore>
-        <ScrollToTop />
-        {/* <ChakraProvider> */}
-        <App />
-        {/* </ChakraProvider> */}
-      </StateStore>
-    </BrowserRouter>
-  </StrictMode>,
+  <ThemeProvider>
+    <StrictMode>
+      <BrowserRouter>
+        <StateStore>
+          <ScrollToTop />
+          {/* <ChakraProvider> */}
+
+          <App />
+
+          {/* </ChakraProvider> */}
+        </StateStore>
+      </BrowserRouter>
+    </StrictMode>
+  </ThemeProvider>,
   document.getElementById("root")
 );

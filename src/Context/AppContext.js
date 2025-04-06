@@ -26,8 +26,8 @@ export function StateStore({ children }) {
       // name: "NRI",
       banners: [hero1Jpg, hero2Jpg, hero3Jpg],
     },
-    baraili: {
-      name: "Baraili",
+    bareilly: {
+      name: "Bareilly",
       // name: "Assamese",
       banners: [hero1Jpg, hero2Jpg, hero3Jpg],
     },
@@ -53,6 +53,10 @@ export function StateStore({ children }) {
     },
     gurgaon: {
       name: "Gurgaon",
+      banners: [hero1Jpg, hero2Jpg, hero3Jpg],
+    },
+    goa: {
+      name: "Goa",
       banners: [hero1Jpg, hero2Jpg, hero3Jpg],
     },
     kolkata: {

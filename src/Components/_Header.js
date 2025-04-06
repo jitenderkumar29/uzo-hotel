@@ -1,11 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { useStore } from "../Context/AppContext";
 import { Link } from "react-router-dom";
 
-import logoPng from "../Assets/icons/logo6.png";
+import logoPng from "../Assets/icons/logo8.png";
 import bannerImg from "../Assets/images/couple2.jpg";
+import { ThemeContext } from "../Context/ThemeContext";
 
 const Header = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const { data, matrimonyType, login, setLogin } = useStore();
   const [filterKey, setFilterKey] = useState("Language");
   const HeaderRef = useRef();
@@ -157,7 +159,7 @@ const Header = () => {
             {!login && (
               <>
                 <li className="active">
-                  <Link to="/">Become a member</Link>
+                  <Link to="/">Become a Member</Link>
                   {/* <section className="submenu">
                     <div className="submenu_multi">
                       <div className="container">
@@ -197,8 +199,6 @@ const Header = () => {
                     </div>
                   </section> */}
 
-
-                  
                   {/* <Link to="/">BROWSE PROFILES</Link> */}
                   {/* <section className="submenu">
                     <div className="submenu_multi">
@@ -240,14 +240,15 @@ const Header = () => {
                   </section> */}
                 </li>
                 <li>
-                  <Link to="/">Corporate member</Link>
+                  <Link to="/">Corporate Member</Link>
                   {/* <Link to="/sapphire-premier">SAPPHIRE PREMIER</Link> */}
                 </li>
                 <li>
-                  <Link to="/">List Your property</Link>
+                  <Link to="/">List Your Property</Link>
                 </li>
                 <li>
-                  <Link to="/">+91 9267958302</Link>
+                  <Link to="/">Language</Link>
+                  {/* <Link to="/">Hindi/English</Link> */}
                 </li>
               </>
             )}
@@ -255,8 +256,15 @@ const Header = () => {
             {!login && (
               <>
                 <Link to="/">
-                {/* <Link to="/login"> */}
-                  <button className="mx-2 py-2 px-3">Log In</button>
+                  {/* <Link to="/login"> */}
+                  <button className="mx-2 py-2 px-3">Log In/SignUp</button>
+                </Link>
+                <Link to="/">
+                  {/* <Link to="/login"> */}
+
+                  <button className="mx-2 py-2 px-3" onClick={toggleTheme}>
+                    Theme
+                  </button>
                 </Link>
                 {/* <Link to={"/corporate-login"}>
                   <button className="ms-2 py-2 px-3">Corporate</button>

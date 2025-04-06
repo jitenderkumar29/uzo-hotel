@@ -37,7 +37,7 @@ const Hero = ({ data = defaultPropData }) => {
   return (
     <section className="Hero">
       <div className="background">
-        <Swiper {...swiperProps}>
+        <Swiper {...swiperProps} style={{ marginTop: "0px" }}>
           {data?.banners.map((i, index) => {
             return (
               <SwiperSlide key={index}>
@@ -51,7 +51,7 @@ const Hero = ({ data = defaultPropData }) => {
       <div className="container" style={{ marginBottom: "0rem" }}>
         <div className="row">
           <div className="col-lg">
-            <h2>India's no one premium value hotels</h2>
+            <h2>Discover your premium luxury hotel in 20+ countries</h2>
             <SearchBar />
             {/* <h2>Millions found their perfect match at {data?.name} !</h2> */}
           </div>
