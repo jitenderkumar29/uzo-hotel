@@ -4,9 +4,9 @@ import SwiperCore, { Autoplay } from "swiper";
 import SearchBar from "./_SearchBar";
 // import { setUrlParam } from "../Tools/helper";
 
-import hero1Jpg from "../Assets/images/hero11.jpg";
-import hero2Jpg from "../Assets/images/hero22.jpg";
-import hero3Jpg from "../Assets/images/hero33.jpg";
+import hero1Jpg from "../Assets/images/hero111.jpg";
+import hero2Jpg from "../Assets/images/hero222.jpg";
+import hero3Jpg from "../Assets/images/hero333.jpg";
 
 SwiperCore.use([Autoplay]);
 

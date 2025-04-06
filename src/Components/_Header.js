@@ -2,7 +2,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { useStore } from "../Context/AppContext";
 import { Link } from "react-router-dom";
 
-import logoPng from "../Assets/icons/logo8.png";
+import logoPng from "../Assets/icons/logo9.png";
 import bannerImg from "../Assets/images/couple2.jpg";
 import { ThemeContext } from "../Context/ThemeContext";
 
