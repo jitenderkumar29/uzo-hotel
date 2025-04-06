@@ -51,7 +51,7 @@ const Hero = ({ data = defaultPropData }) => {
       <div className="container" style={{ marginBottom: "0rem" }}>
         <div className="row">
           <div className="col-lg">
-            <h2>Discover your premium luxury hotel in 20+ countries</h2>
+            <h2>Discover premium luxury hotel in 20+ countries</h2>
             <SearchBar />
             {/* <h2>Millions found their perfect match at {data?.name} !</h2> */}
           </div>

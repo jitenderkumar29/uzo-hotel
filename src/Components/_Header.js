@@ -262,9 +262,9 @@ const Header = () => {
                 <Link to="/">
                   {/* <Link to="/login"> */}
 
-                  <button className="mx-2 py-2 px-3" onClick={toggleTheme}>
+                  {/* <button className="mx-2 py-2 px-3" onClick={toggleTheme}>
                     Theme
-                  </button>
+                  </button> */}
                 </Link>
                 {/* <Link to={"/corporate-login"}>
                   <button className="ms-2 py-2 px-3">Corporate</button>
