@@ -7,12 +7,31 @@ import SearchBar from "./_SearchBar";
 import hero1Jpg from "../Assets/images/hero111.jpg";
 import hero2Jpg from "../Assets/images/hero222.jpg";
 import hero3Jpg from "../Assets/images/hero333.jpg";
+import hero4Jpg from "../Assets/images/hero444.jpg";
+import hero5Jpg from "../Assets/images/hero555.jpg";
+import hero6Jpg from "../Assets/images/hero666.jpg";
+import hero7Jpg from "../Assets/images/hero777.jpg";
+import hero8Jpg from "../Assets/images/hero888.jpg";
+import hero9Jpg from "../Assets/images/hero999.jpg";
+import HotelSearch from "./hotelSearch/HotelSearch";
+import HotelSearchBar from "./hotelSearch/HotelSearchBar";
+// import hero4Jpg from "../Assets/images/hero444.jpg";
 
 SwiperCore.use([Autoplay]);
 
 const defaultPropData = {
   name: "NobleShaadi",
-  banners: [hero1Jpg, hero2Jpg, hero3Jpg],
+  banners: [
+    hero1Jpg,
+    hero2Jpg,
+    hero3Jpg,
+    hero4Jpg,
+    hero5Jpg,
+    hero6Jpg,
+    hero7Jpg,
+    hero8Jpg,
+    hero9Jpg,
+  ],
 };
 
 const Hero = ({ data = defaultPropData }) => {
@@ -51,8 +70,17 @@ const Hero = ({ data = defaultPropData }) => {
       <div className="container" style={{ marginBottom: "0rem" }}>
         <div className="row">
           <div className="col-lg">
-            <h2>Discover premium luxury hotel in 20+ countries</h2>
-            <SearchBar />
+            <h1
+              className="hero-heading"
+              style={{ textAlign: "center", color: "white", fontSize: "45px" }}
+            >
+              Discover premium luxury hotel in 20+ countries
+            </h1>
+
+            {/* <SearchBar /> */}
+            <HotelSearch />
+            {/* <HotelSearchBar /> */}
+
             {/* <h2>Millions found their perfect match at {data?.name} !</h2> */}
           </div>
         </div>

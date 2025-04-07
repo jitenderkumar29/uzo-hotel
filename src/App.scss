@@ -1904,7 +1904,15 @@ body {
   }
 
   h1 {
-    color: var(--light-accent);
+    // color: var(--light-accent);
+    text-align: center;
+    color: var(--light-background);
+  }
+
+  .hero-heading{
+    // text-align: center;
+    // color: white;
+    // font-size: 50px;
   }
 
   .form {

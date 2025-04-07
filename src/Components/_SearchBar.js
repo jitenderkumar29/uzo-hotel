@@ -77,10 +77,10 @@ const SearchBar = () => {
               <FaUser className="selector-icon" />
               <span>{guestCount} Guest</span>
             </div>
-            <div className="room-guest-item">
+            {/* <div className="room-guest-item">
               <FaUser className="selector-icon" />
               <span>{childrenCount} Children</span>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -114,7 +114,7 @@ const SearchBar = () => {
               <button onClick={() => setGuestCount(guestCount + 1)}>+</button>
             </div>
           </div>
-          <div className="counter">
+          {/* <div className="counter">
             <span>Children</span>
             <div className="counter-controls">
               <button
@@ -127,7 +127,7 @@ const SearchBar = () => {
                 +
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       )}
     </div>
@@ -148,15 +148,16 @@ const styles = `
   }
 
   .search-bar {
+    height: 56px
+    // max-width: 600px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: white;
-    border-radius: 30px;
-    padding: 5px 5px 5px 15px;
+    border-radius: 16px;
+    padding: 5px 5px 5px 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     gap: 5px;
-    
   }
 
   /* Specific styles for the input section */
@@ -186,7 +187,7 @@ const styles = `
     padding: 8px 0;
     font-size: 14px;
     outline: none;
-    min-width: 200px;
+    min-width: 300px;
     color: black;
   }
 

@@ -1,10 +1,13 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { useStore } from "../Context/AppContext";
 import { Link } from "react-router-dom";
-
-import logoPng from "../Assets/icons/logo9.png";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import logoPng from "../Assets/icons/logo19.png";
 import bannerImg from "../Assets/images/couple2.jpg";
 import { ThemeContext } from "../Context/ThemeContext";
+import { FaChevronDown, FaGlobe } from "react-icons/fa";
+import { Center } from "@chakra-ui/react";
+import { wrap } from "framer-motion";
 
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -47,7 +50,19 @@ const Header = () => {
               {Object.keys(matrimonyType).map((i, index) => {
                 return (
                   <li key={index}>
-                    <Link to={`/`}>{matrimonyType[i].name}</Link>
+                    <Link
+                      to={`/`}
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        // flexWrap: "wrap",
+                      }}
+                    >
+                      {matrimonyType[i].name}
+                      <FaChevronDown className="text-[#0D0156] text-xs" />
+                      {/* <MdKeyboardArrowDown /> */}
+                    </Link>
                     {/* <Link to={`/find/${i}`}>{matrimonyType[i].name}</Link> */}
                   </li>
                 );
@@ -247,7 +262,11 @@ const Header = () => {
                   <Link to="/">List Your Property</Link>
                 </li>
                 <li>
-                  <Link to="/">Language</Link>
+                  <Link to="/">
+                    English
+                    <FaChevronDown className="text-[#0D0156] text-xs" />
+                    {/* <FaGlobe size={15} /> */}
+                  </Link>
                   {/* <Link to="/">Hindi/English</Link> */}
                 </li>
               </>
