@@ -56,6 +56,7 @@ const Header = () => {
                         display: "inline-flex",
                         alignItems: "center",
                         justifyContent: "center",
+                        height: "45px",
                         // flexWrap: "wrap",
                       }}
                     >
@@ -75,7 +76,7 @@ const Header = () => {
       <div className="main">
         <section className="container links">
           <Link to="/" className="logo">
-            <img src={logoPng} alt="" />
+            <img src={logoPng} alt="" style={{ height: "70px" }} />
           </Link>
 
           <div className="logo_mobile">

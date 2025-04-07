@@ -17,6 +17,7 @@ const HotelSearch = () => {
   const [showRoomGuestSelector, setShowRoomGuestSelector] = useState(false);
   const [roomCount, setRoomCount] = useState(1);
   const [guestCount, setGuestCount] = useState(1);
+  const [childCount, setChildCount] = useState(0);
   const [checkIn, setCheckIn] = useState(new Date());
   const [checkOut, setCheckOut] = useState(new Date());
 
@@ -114,6 +115,9 @@ const HotelSearch = () => {
                   {/* <FaUser className="selector-icon" /> */}
                   <span>{guestCount} Guest</span>
                 </div>
+                {/* <div className="room-guest-item">
+                  <span>{childCount} Child</span>
+                </div> */}
               </div>
             </div>
             {/* <input
@@ -158,6 +162,20 @@ const HotelSearch = () => {
                   </button>
                 </div>
               </div>
+              {/* <div className="counter">
+                <span>Child</span>
+                <div className="counter-controls">
+                  <button
+                    onClick={() => setChildCount(Math.max(1, childCount - 1))}
+                  >
+                    -
+                  </button>
+                  <span>{childCount}</span>
+                  <button onClick={() => setChildCount(childCount + 1)}>
+                    +
+                  </button>
+                </div>
+              </div> */}
               {/* <div className="counter">
             <span>Children</span>
             <div className="counter-controls">

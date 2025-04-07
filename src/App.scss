@@ -16,6 +16,7 @@
   --light-secondary: #777777;
   // --light-accent: #75005c;
   --light-accent: #162271;  //criteo.com dar blue color
+  --dark-accent: #0D0156;
   // --light-accent: #de3330;  //red color
   // --light-accent: #582c4f;
   // --light-accent: #7c045c;
@@ -340,7 +341,7 @@ body {
 
   .find {
     color: var(--light-background);
-    background: #0D0156; //black background
+    background: #0D0156; //blue background
     // background: var(--light-primary); //black background
     // color: var(--light-accent);
 
@@ -1955,7 +1956,7 @@ body {
     padding: 2rem 0;
 
     .logo {
-      height: 60px;
+      height: 70px;
 
       img {
         object-fit: contain;
