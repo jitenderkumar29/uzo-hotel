@@ -2,7 +2,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { useStore } from "../Context/AppContext";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import logoPng from "../Assets/icons/logo23.png";
+import logoPng from "../Assets/icons/logo22.png";
 import bannerImg from "../Assets/images/couple2.jpg";
 import { ThemeContext } from "../Context/ThemeContext";
 import { FaChevronDown, FaGlobe } from "react-icons/fa";
