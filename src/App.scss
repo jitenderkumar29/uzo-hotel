@@ -17,6 +17,7 @@
   // --light-accent: #75005c;
   --light-accent: #162271;  //criteo.com dar blue color
   --dark-accent: #0D0156;
+  --dark-white: #ffffff;
   // --light-accent: #de3330;  //red color
   // --light-accent: #582c4f;
   // --light-accent: #7c045c;
@@ -31,6 +32,12 @@
   --logo-color-hover: #c50307;
 }
 
+
+
+.login-sigun-button{
+  background: var(--logo-color) !important;
+  color: var(--light-background) !important;
+}
 /* styles.css */
 // body {
 //   margin: 0;
@@ -346,7 +353,7 @@ body {
     // color: var(--light-accent);
 
     .container {
-      overflow: hidden;
+      // overflow: hidden;
 
       ul {
         display: flex;
@@ -378,6 +385,7 @@ body {
 
   .main {
     background: var(--light-accent);
+    padding: 10px;
 
     .links {
       height: 68px;

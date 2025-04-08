@@ -115,9 +115,9 @@ const HotelSearch = () => {
                   {/* <FaUser className="selector-icon" /> */}
                   <span>{guestCount} Guest</span>
                 </div>
-                {/* <div className="room-guest-item">
+                <div className="room-guest-item">
                   <span>{childCount} Child</span>
-                </div> */}
+                </div>
               </div>
             </div>
             {/* <input
@@ -162,7 +162,7 @@ const HotelSearch = () => {
                   </button>
                 </div>
               </div>
-              {/* <div className="counter">
+              <div className="counter">
                 <span>Child</span>
                 <div className="counter-controls">
                   <button
@@ -175,7 +175,7 @@ const HotelSearch = () => {
                     +
                   </button>
                 </div>
-              </div> */}
+              </div>
               {/* <div className="counter">
             <span>Children</span>
             <div className="counter-controls">

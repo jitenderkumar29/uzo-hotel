@@ -26,6 +26,7 @@
   color: var(--light-primary);
 }
 
+/* react date picker css styles */
 .react-datepicker__input-container input {
   width: 100%;
   height: 50px;
@@ -33,6 +34,20 @@
   border: 1px solid #ccc;
   color: black;
   border-radius: 4px;
+}
+
+.react-datepicker__header {
+  background-color: var(--light-accent); /* Change header background */
+}
+
+/* This works in most cases */
+.react-datepicker__header .react-datepicker__current-month,
+.react-datepicker__header .react-datepicker-year-header {
+  color: var(
+    --light-accent
+  ) !important; /* Dark blue theme color with !important */
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 /* Custom weekend days */

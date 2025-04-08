@@ -83,22 +83,23 @@ export function StateStore({ children }) {
       name: "Noida",
       banners: [hero1Jpg, hero2Jpg, hero3Jpg],
     },
-    haridwar: {
-      name: "Haridwar",
-      banners: [hero1Jpg, hero2Jpg, hero3Jpg],
-    },
+    // haridwar: {
+    //   name: "Haridwar",
+    //   banners: [hero1Jpg, hero2Jpg, hero3Jpg],
+    // },
     shirdi: {
-      name: "Shirdi",
-      banners: [hero1Jpg, hero2Jpg, hero3Jpg],
-    },
-    varansi: {
-      name: "Varansi",
-      banners: [hero1Jpg, hero2Jpg, hero3Jpg],
-    },
-    divorcee: {
       name: "All",
+      // name: "Shirdi",
       banners: [hero1Jpg, hero2Jpg, hero3Jpg],
     },
+    // varansi: {
+    //   name: "Varansi",
+    //   banners: [hero1Jpg, hero2Jpg, hero3Jpg],
+    // },
+    // divorcee: {
+    //   name: "All",
+    //   banners: [hero1Jpg, hero2Jpg, hero3Jpg],
+    // },
   };
 
   const data = {

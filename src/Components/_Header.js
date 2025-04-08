@@ -8,6 +8,7 @@ import { ThemeContext } from "../Context/ThemeContext";
 import { FaChevronDown, FaGlobe } from "react-icons/fa";
 import { Center } from "@chakra-ui/react";
 import { wrap } from "framer-motion";
+import LanguageSelector from "./languageSelector/LanguageSelector";
 
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -264,8 +265,9 @@ const Header = () => {
                 </li>
                 <li>
                   <Link to="/">
-                    English
-                    <FaChevronDown className="text-[#0D0156] text-xs" />
+                    {/* English
+                    <FaChevronDown className="text-[#0D0156] text-xs" /> */}
+                    <LanguageSelector />
                     {/* <FaGlobe size={15} /> */}
                   </Link>
                   {/* <Link to="/">Hindi/English</Link> */}
@@ -277,7 +279,9 @@ const Header = () => {
               <>
                 <Link to="/">
                   {/* <Link to="/login"> */}
-                  <button className="mx-2 py-2 px-3">Log In/SignUp</button>
+                  <button className="mx-2 py-2 px-3 login-sigun-button">
+                    Log In/SignUp
+                  </button>
                 </Link>
                 <Link to="/">
                   {/* <Link to="/login"> */}
