@@ -1,78 +1,56 @@
-import React, { useState, useRef, useEffect } from "react";
-import "./LanguageSelector.css"; // You can keep the same CSS file
+// src/components/LanguageSelector.jsx
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
+import "./LanguageSelector.css";
 
 const LanguageSelector = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState({
-    lang: "en",
-    name: "English",
-    flag: "🌐",
-  });
-  const dropdownRef = useRef(null);
 
   const languages = [
-    { lang: "en", name: "English", flag: "🇬🇧" },
-    { lang: "es", name: "Español", flag: "🇪🇸" },
-    { lang: "fr", name: "Français", flag: "🇫🇷" },
-    { lang: "de", name: "Deutsch", flag: "🇩🇪" },
-    { lang: "hi", name: "Hindi", flag: "in" },
-    { lang: "zh", name: "中文", flag: "🇨🇳" },
+    { code: "en", name: "English", flag: "" },
+    { code: "hi", name: "Hindi", flag: "" },
+    { code: "es", name: "Español", flag: "" },
+    { code: "fr", name: "Français", flag: "" },
+    { code: "de", name: "Deutsch", flag: "" },
+    { code: "zh", name: "中文", flag: "" },
   ];
+  // const languages = [
+  //   { code: "en", name: "English", flag: "🇬🇧" },
+  //   { code: "es", name: "Español", flag: "🇪🇸" },
+  //   { code: "fr", name: "Français", flag: "🇫🇷" },
+  //   { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  //   { code: "zh", name: "中文", flag: "🇨🇳" },
+  // ];
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const selectLanguage = (lang) => {
-    const selected = languages.find((l) => l.lang === lang);
-    setSelectedLanguage({
-      lang: selected.lang,
-      name: selected.name,
-      flag: selected.flag,
-    });
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
     setIsOpen(false);
-    // Here you would implement your language change logic
-    console.log("Language changed to:", lang);
   };
 
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  const currentLanguage =
+    languages.find((lang) => lang.code === i18n.language) || languages[0];
 
   return (
-    <div
-      className={`language-selector ${isOpen ? "active" : ""}`}
-      ref={dropdownRef}
-    >
-      <button className="language-button" onClick={toggleDropdown}>
-        <span className="selected-language">
-          <span className="flag-icon">{/*{selectedLanguage.flag}*/}</span>{" "}
-          {selectedLanguage.name}
+    <div className="language-selector">
+      <button className="language-button" onClick={() => setIsOpen(!isOpen)}>
+        <span className="current-language">
+          {currentLanguage.flag} {currentLanguage.name}
         </span>
-        <span className="dropdown-arrow">▼</span>
       </button>
 
       {isOpen && (
         <div className="language-dropdown">
           {languages.map((language) => (
-            <div
-              key={language.lang}
+            <button
+              key={language.code}
               className="language-option"
-              onClick={() => selectLanguage(language.lang)}
+              onClick={() => changeLanguage(language.code)}
             >
-              <span className="flag-icon">{/*{language.flag}*/}</span>{" "}
-              {language.name}
-            </div>
+              <span className="flag">{language.flag}</span>
+              <span className="name">{language.name}</span>
+            </button>
           ))}
         </div>
       )}

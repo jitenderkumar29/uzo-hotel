@@ -7,9 +7,9 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
-  padding: 16px;
+  /* padding: 16px; */
 }
 
 .react-datepicker-wrapper {
@@ -37,10 +37,13 @@
 }
 
 .react-datepicker__header {
-  background-color: var(--light-accent); /* Change header background */
+  /* background-color: var(
+    --light-accent
+  ) !important; Change header background */
 }
 
 /* This works in most cases */
+.react-datepicker__header .react-datepicker__day,
 .react-datepicker__header .react-datepicker__current-month,
 .react-datepicker__header .react-datepicker-year-header {
   color: var(
@@ -57,8 +60,10 @@
 
 .room-guest-popup {
   position: absolute;
-  top: 69%;
-  right: 22%;
+  top: 20% !important;
+  right: 20% !important;
+  /* top: 69%;
+  right: 22%; */
   background: white;
   border-radius: 8px;
   padding: 15px;
@@ -314,7 +319,7 @@
   }
 
   .search-field.destination .search-input {
-    border-radius: 8px 0 0 8px;
+    border-radius: 4px 4px 4px 4px;
   }
 
   .date-fields {

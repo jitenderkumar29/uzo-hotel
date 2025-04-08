@@ -2,6 +2,7 @@ import { useStore } from "../Context/AppContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
 import SearchBar from "./_SearchBar";
+// import { Trans } from "react-i18next";
 // import { setUrlParam } from "../Tools/helper";
 
 import hero1Jpg from "../Assets/images/hero111.jpg";
@@ -15,6 +16,7 @@ import hero8Jpg from "../Assets/images/hero888.jpg";
 import hero9Jpg from "../Assets/images/hero999.jpg";
 import HotelSearch from "./hotelSearch/HotelSearch";
 import HotelSearchBar from "./hotelSearch/HotelSearchBar";
+import { Trans, useTranslation } from "react-i18next";
 // import hero4Jpg from "../Assets/images/hero444.jpg";
 
 SwiperCore.use([Autoplay]);
@@ -36,8 +38,9 @@ const defaultPropData = {
 
 const Hero = ({ data = defaultPropData }) => {
   const { navigate } = useStore();
-
+  const { t } = useTranslation();
   const styleRoot = document.documentElement.style;
+  // const hero_message = "Discover premium luxury hotel in 20+ countries";
 
   const handleChange = (e) => {
     styleRoot.setProperty("--light-accent", e.target.value);
@@ -74,6 +77,9 @@ const Hero = ({ data = defaultPropData }) => {
               className="hero-heading"
               style={{ textAlign: "center", color: "white", fontSize: "45px" }}
             >
+              {/* <Trans>(Discover premium luxury hotel in 20+ countries)</Trans> */}
+              {/* {t("Discover premium luxury hotel in 20+ countries")} */}
+              {/* <h1>{t("hello")}</h1> */}
               Discover premium luxury hotel in 20+ countries
             </h1>
 

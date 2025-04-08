@@ -176,6 +176,17 @@ const HotelSearch = () => {
                   </button>
                 </div>
               </div>
+              <div className="counter">
+                <div className="">
+                  <button
+                    onClick={() =>
+                      setShowRoomGuestSelector(!showRoomGuestSelector)
+                    }
+                  >
+                    Done
+                  </button>
+                </div>
+              </div>
               {/* <div className="counter">
             <span>Children</span>
             <div className="counter-controls">

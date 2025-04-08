@@ -2,13 +2,14 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { useStore } from "../Context/AppContext";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import logoPng from "../Assets/icons/logo19.png";
+import logoPng from "../Assets/icons/logo23.png";
 import bannerImg from "../Assets/images/couple2.jpg";
 import { ThemeContext } from "../Context/ThemeContext";
 import { FaChevronDown, FaGlobe } from "react-icons/fa";
 import { Center } from "@chakra-ui/react";
 import { wrap } from "framer-motion";
 import LanguageSelector from "./languageSelector/LanguageSelector";
+// import LanguageSelector from "./languageSelector/LanguageSelector";
 
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -57,7 +58,7 @@ const Header = () => {
                         display: "inline-flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        height: "45px",
+
                         // flexWrap: "wrap",
                       }}
                     >
@@ -77,7 +78,11 @@ const Header = () => {
       <div className="main">
         <section className="container links">
           <Link to="/" className="logo">
-            <img src={logoPng} alt="" style={{ height: "70px" }} />
+            <img
+              src={logoPng}
+              alt=""
+              style={{ height: "70px", marginLeft: "15px" }}
+            />
           </Link>
 
           <div className="logo_mobile">
@@ -267,6 +272,7 @@ const Header = () => {
                   <Link to="/">
                     {/* English
                     <FaChevronDown className="text-[#0D0156] text-xs" /> */}
+                    {/* <LanguageSelector /> */}
                     <LanguageSelector />
                     {/* <FaGlobe size={15} /> */}
                   </Link>
